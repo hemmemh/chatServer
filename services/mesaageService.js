@@ -5,8 +5,8 @@ const User  = require("../models/User")
 const bccrypt = require("bcrypt")
 const tokenServices = require("./tokenService")
 const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, API_URL } = require('../utils/config');
-const room = require("../models/room")
-const message = require("../models/message")
+const room = require("../models/Room")
+const message = require("../models/Message")
 const fs = require('fs')
 const path = require("path")
 class messageServices{

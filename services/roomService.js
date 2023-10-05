@@ -5,7 +5,7 @@ const User  = require("../models/User")
 const bccrypt = require("bcrypt")
 const tokenServices = require("./tokenService")
 const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, API_URL } = require('../utils/config');
-const room = require("../models/room")
+const room = require("../models/Room")
 
 class roomServices{
     async createOrUpdateRoom(userIdOne,userIdTwo){
