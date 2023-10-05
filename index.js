@@ -14,18 +14,18 @@ const date= new Date()
 const fileUpload = require('express-fileupload');
 const path = require('path');
 const { CLIENT_URL } = require('./utils/config');
-const port = process.env.PORT || 5030;
+const port = process.env.PORT || 5000;
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors(
   {credentials:true,
-  origin:'http://31.129.107.38:3050',
+  origin:'https://chat-client-alpha.vercel.app',
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",}
 ))
 const io = new Server(server,{
   cors:{
     credentials:true,
-    origin:'http://31.129.107.38:3050',
+    origin:'https://chat-client-alpha.vercel.app',
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   }
 })
